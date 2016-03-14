@@ -9,11 +9,11 @@ $ brew install postgres
 You should see the following instructions after the install is finished.
 
 The first method will launch the postgres server each time boot your computer. You can use the second method to launch the server manually.
->```
-To load postgresql:
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-Or, if you don't want/need launchctl, you can just run:
-  postgres -D /usr/local/var/postgres```
+>To load postgresql:
+  `launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist`
+
+>Or, if you don't want/need launchctl, you can just run:
+  `postgres -D /usr/local/var/postgres`
 
 
 Alternatively, you can download Postgres.app [here](http://postgresapp.com/)
