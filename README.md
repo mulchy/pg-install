@@ -3,7 +3,7 @@
 ## Get Postgres
 
 ```
-$ brew install postgres
+brew install postgres
 ```
 
 You should see the following instructions after the install is finished.
@@ -17,6 +17,13 @@ The first method will launch the postgres server each time boot your computer. Y
 
 >Or, if you don't want/need launchctl, you can just run:
   `postgres -D /usr/local/var/postgres`
+
+Most people will want postgres to run automatically, and should just run these two commands
+
+```
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+```
 
 Then, to create a database for your user, run this command
 
