@@ -18,6 +18,12 @@ The first method will launch the postgres server each time boot your computer. Y
 >Or, if you don't want/need launchctl, you can just run:
   `postgres -D /usr/local/var/postgres`
 
+Then, to create a database for your user, run this command
+
+```
+createdb
+```
+
 
 Alternatively, you can download Postgres.app [here](http://postgresapp.com/)
 
